@@ -8,6 +8,7 @@ import { LoginComponent } from './page/login/login.component';
 import { ErrorComponent } from './page/error/error.component';
 import { MenuPrincipalComponent } from './page/menu-principal/menu-principal.component';
 import { FooterComponent } from './page/footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
