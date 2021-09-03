@@ -1,6 +1,7 @@
 import { R3BoundTarget } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { UsuarioService } from 'src/app/servicios/usuario.service';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +10,16 @@ import { RouterModule } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private ruta:RouterModule) { }
+  constructor(private nombreUSuario:UsuarioService) {
+    this.usuarioActual = nombreUSuario.NombreUsuario;
+   }
+
+  usuarioActual:string;
 
   ngOnInit(): void {
+    
   }
+
+  
 
 }
